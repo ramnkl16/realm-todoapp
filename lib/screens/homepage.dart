@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_todo/realm/posDbProvider.dart';
+import 'package:posprovider/posDbProvider.dart';
+
 import 'package:provider/provider.dart';
 import 'package:flutter_todo/components/todo_list.dart';
 import 'package:flutter_todo/components/create_item.dart';

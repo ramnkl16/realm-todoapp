@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
-import 'package:flutter_todo/realm/posDbProvider.dart';
 import 'package:flutter_todo/theme.dart';
 import 'dart:convert';
 import 'package:flutter_todo/screens/homepage.dart';
 import 'package:flutter_todo/screens/log_in.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:posprovider/appProvider.dart';
+import 'package:posprovider/configDbProvider.dart';
+import 'package:posprovider/posDbProvider.dart';
 
-import 'realm/appProvider.dart';
-import 'realm/configDbProvider.dart';
 import 'screens/configPage.dart';
 
 void main() async {

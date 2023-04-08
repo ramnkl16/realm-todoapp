@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_todo/realm/configDbProvider.dart';
+
+import 'package:posprovider/configDbProvider.dart';
+import 'package:posprovider/connectionInfo.dart';
 
 import '../components/app_bar.dart';
-import '../realm/connectionInfo.dart';
 
 class AppConfigPage extends ConsumerStatefulWidget {
   const AppConfigPage({Key? key}) : super(key: key);

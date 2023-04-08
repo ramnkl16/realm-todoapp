@@ -14,10 +14,14 @@ dependencies:
 
   provider: ^6.0.0
   cupertino_icons: ^1.0.2
-  realm: 1.0.0
+  realm: ^1.0.3
   path_provider: ^2.0.10
   riverpod: ^2.3.2
   flutter_riverpod: ^2.3.2
+  posprovider:
+    path: packages/posprovider
+  pim:
+    path: packages/pim
 
 dev_dependencies:
   flutter_test:

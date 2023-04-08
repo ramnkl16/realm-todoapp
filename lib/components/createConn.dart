@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_todo/components/widgets.dart';
-import 'package:flutter_todo/realm/configDbProvider.dart';
+import 'package:posprovider/configDbProvider.dart';
 
 class CreateConnAction extends StatelessWidget {
   const CreateConnAction({Key? key}) : super(key: key);

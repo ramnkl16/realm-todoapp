@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_todo/components/modify_item.dart';
 import 'package:flutter_todo/components/widgets.dart';
-import 'package:flutter_todo/realm/appProvider.dart';
-import 'package:flutter_todo/theme.dart';
-import 'package:provider/provider.dart';
-import 'package:flutter_todo/realm/schemas.dart';
-import 'package:flutter_todo/realm/realm_services.dart';
 
-import '../realm/posDbProvider.dart';
+import 'package:flutter_todo/theme.dart';
+import 'package:posprovider/appProvider.dart';
+import 'package:posprovider/posDbProvider.dart';
+import 'package:posprovider/schemas.dart';
+import 'package:provider/provider.dart';
+
+import 'package:flutter_todo/realm/realm_services.dart';
 
 enum MenuOption { edit, delete }
 

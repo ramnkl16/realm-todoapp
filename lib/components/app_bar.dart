@@ -2,8 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_todo/realm/posDbProvider.dart';
-import 'package:flutter_todo/realm/appProvider.dart';
+import 'package:posprovider/appProvider.dart';
+import 'package:posprovider/posDbProvider.dart';
 
 class TodoAppBar extends ConsumerWidget with PreferredSizeWidget {
   TodoAppBar({Key? key}) : super(key: key);

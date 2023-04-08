@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_todo/components/widgets.dart';
 import 'package:flutter_todo/realm/realm_services.dart';
+import 'package:posprovider/posDbProvider.dart';
 import 'package:provider/provider.dart';
-
-import '../realm/posDbProvider.dart';
 
 class CreateItemAction extends StatelessWidget {
   const CreateItemAction({Key? key}) : super(key: key);

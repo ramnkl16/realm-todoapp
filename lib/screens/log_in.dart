@@ -4,9 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_todo/theme.dart';
 
 import 'package:flutter_todo/components/widgets.dart';
-
-import '../realm/appProvider.dart';
-import '../realm/posDbProvider.dart';
+import 'package:posprovider/appProvider.dart';
+import 'package:posprovider/posDbProvider.dart';
 
 class LogIn extends ConsumerStatefulWidget {
   @override

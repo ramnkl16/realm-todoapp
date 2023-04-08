@@ -1,4 +1,4 @@
-import 'package:flutter_todo/realm/schemas.dart';
+import 'package:posprovider/schemas.dart';
 import 'package:realm/realm.dart';
 import 'package:flutter/material.dart';
 

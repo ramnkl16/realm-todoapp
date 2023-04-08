@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_todo/components/todo_item.dart';
 import 'package:flutter_todo/components/widgets.dart';
-import 'package:flutter_todo/realm/schemas.dart';
+import 'package:pim/product/products_screen.dart';
+import 'package:posprovider/posDbProvider.dart';
+import 'package:posprovider/schemas.dart';
 
 import 'package:realm/realm.dart';
-
-import '../realm/posDbProvider.dart';
 
 class TodoList extends ConsumerStatefulWidget {
   const TodoList({Key? key}) : super(key: key);
@@ -45,6 +45,12 @@ class _TodoListState extends ConsumerState<TodoList> {
                   const Expanded(
                     child: Text("Show All Tasks", textAlign: TextAlign.right),
                   ),
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: ((context) => const ProductsScreen())));
+                      },
+                      child: const Text('Show total products')),
                   Switch(
                     value: realmServices.showAll,
                     onChanged: (value) async {

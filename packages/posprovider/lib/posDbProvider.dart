@@ -1,8 +1,9 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'package:flutter_todo/realm/schemas.dart';
-import 'package:flutter_todo/realm/appProvider.dart';
+import 'package:posprovider/product/product.dart';
 import 'package:realm/realm.dart';
+
+import 'appProvider.dart';
+import 'schemas.dart';
 
 final posDbProvider = StateProvider((ref) {
   print('objectProvider called');
@@ -15,7 +16,7 @@ class PosDbProvider extends StateNotifier<Realm> {
   PosDbProvider({required this.app})
       : super(Realm(Configuration.flexibleSync(
           app.currentUser!,
-          [Item.schema],
+          [Item.schema, Product.schema],
           path:
               "${Configuration.defaultRealmPath.split("default.realm")[0]}\\pos.realm",
         )));
