@@ -33,7 +33,7 @@ class _AppConfigPageState extends ConsumerState<AppConfigPage> {
     _baseUrlController = TextEditingController();
     _dsController = TextEditingController();
     _hostController = TextEditingController();
-    _appIdController.text = _ci?.appId ?? 'todoapp-trrdb';
+    _appIdController.text = _ci?.appId ?? 'todoapp-zszwu';
     _appUrlController.text = _ci?.appUrl ??
         'https://realm.mongodb.com/groups/629a7fcd50cf43191ab6d65c/apps/642c4dccdb581cf00dd68bb3';
     _baseUrlController.text = _ci?.baseUrl ?? 'https://realm.mongodb.com';
