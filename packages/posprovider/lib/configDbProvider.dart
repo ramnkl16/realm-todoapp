@@ -2,8 +2,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:realm/realm.dart';
 
-import 'authInfo.dart';
 import 'connectionInfo.dart';
+import 'loggedInUser.dart';
 
 final configDbProvider = StateProvider((ref) {
   //final app = ref.read(appProvider);

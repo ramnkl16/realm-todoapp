@@ -1,5 +1,5 @@
 import 'package:realm/realm.dart';
-part 'authInfo.g.dart';
+part 'loggedInUser.g.dart';
 
 @RealmModel()
 class _LoggedInUser {
